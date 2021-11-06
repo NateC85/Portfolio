@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    
     <!-- Head -->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=devise-width" />
-        <title>Nathan John Crawford</title>
-        <link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
-    </head>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=devise-width" />
+            <title>Nathan John Crawford</title>
+            <link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
+        </head>
 
     <!-- Body -->
-    <body class="Background">
+        <body class="Background">
 
         <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
             <a href="#Contact">Contact</a>
         </div>
 
@@ -28,7 +32,7 @@
             <video autoplay muted loop id="Typing_Video">
                 <source src="Videos/Port_1.mp4" type="video/mp4">
                 <!-- Display message if video fails to run -->
-                Sorry,your browser does not support HTML5 video.
+                Sorry, your browser does not support HTML5 video.
             </video>
         </div>
 
@@ -50,6 +54,39 @@
                     <br> Thank you for stopping by and checking out my portfolio!
                 </p>
             </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="" alt="Hello there, I'm Nate.">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images\HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images\Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images\SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images\Square Custom Picture.png" alt="Picture of my choosing">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- About section -->
