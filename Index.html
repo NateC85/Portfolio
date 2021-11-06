@@ -83,8 +83,21 @@
                     <!-- Slide 5 of 6 -->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="Images\Square Custom Picture.png" alt="Picture of my choosing">
-                        <div class="text">I'm available to assist you on your project!</div>
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div>
                     </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">$#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
             </div>
         </div>
@@ -107,7 +120,7 @@
                     <br>
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" targer="_blank">The Tech Academy</a>'s Python Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more.
                     <br>
-                    <br>I am a full-stack developer and love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>I am a full-stack developer and love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -125,38 +138,36 @@
             </div>
             <!-- Right column -->
             <div class="Column_2">
-                <a href="https://github.com/NateC85" target="_blank" img src="./Images/GitHub.png" alt="GitHub Logo"></a>
+                <a href="https://github.com/NateC85" target="_blank"><img src="./Images/GitHub.png" alt="GitHub Logo"></a>
             </div>
         </div>
 
-        <!-- Contact section -->
-        <div class="Row" id="Contact">
-            <!-- Contact image, left column -->
-            <div class="Column_2 Column_tall">
-                <img src="Images/contact.webp" alt="Contact_Image">
-            </div>
-            <!-- Contact form, right column -->
-            <div class="Column_1 Column_tall">
+        <!-- Contact Form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="POP_UP_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xeqvdpdn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
                 <h1>Contact</h1>
                 <!-- This specifies where and how to send the form data; we are leaving it blank -->
-                <form action="https://formspree.io/f/xeqvdpdn" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Please enter your email here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Please write your message here" name="message">
+
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
-
+ 
         <!-- Footer section -->
         <footer>
-            <p>
-                 <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                 <br>
-            </p>
+                 <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p><br>
         </footer>
+        <script src="JS\Portfolio.js"></script>
     </body>
 </html>
