@@ -28,6 +28,7 @@ h1 {
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
+    margin-bottom: 6%;
     color: #1a1a1a;
 }
 
@@ -170,6 +171,7 @@ footer {
     color: black; /* This defines the font color that will display when navbar elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
+    
 }
 
 /* Navbar home button */
