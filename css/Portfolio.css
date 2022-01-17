@@ -243,7 +243,7 @@ footer {
 }
 
 /* Next and previous buttons */
-.Prevoius, .Next {
+.Previous, .Next {
     cursor: pointer; /* Changes the mouse to a pointer when the buttons are selected */
     position: absolute; /* This makes the next and previous buttons positioned relative to the slideshow container */
     top: 50%; /* This moves the buttons up in the slideshow container */
