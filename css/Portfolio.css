@@ -7,7 +7,7 @@ html {
 
 /* Body */
 body {
-    margin: 0%; /* This ensures our site displays all the way to the edge of the browser sreen */
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
@@ -24,7 +24,7 @@ body.fade-out {
 
 /* Heading 1 elements */
 h1 {
-    text-transform: uppercase; /*Captalizing all h1 headings */
+    text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
@@ -96,7 +96,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-    filter: grayscale(5%);/* Brings back most of the images's color when hovered over */
+    filter: grayscale(5%);/* Brings back most of the image's color when hovered over */
 }
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
@@ -117,7 +117,7 @@ footer {
 
 /***** NAVBAR STYLING *****/
 .Navbar {
-    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our navbar is not displated */
+    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our navbar is not displayed */
     background-color: black; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
@@ -200,7 +200,7 @@ footer {
     color: rgb(240, 240, 243); /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
     height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
-    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly bedyond the text */
+    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 5.75s;
     animation: moveNavText 5.75s;
@@ -270,8 +270,8 @@ footer {
 .text {
     color: rgba(31, 255, 255, 0.75);
     padding: 1vw;
-    position: absolute; /* This ensures the text is postioned within the image */
-    bottom: 0; /* This propery sets the text at the bottom of the image */
+    position: absolute; /* This ensures the text is positioned within the image */
+    bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
     font-family: Perpetua, Rockwell Extra Bold;
@@ -290,7 +290,7 @@ footer {
     margin: .25vw; /* Adds additional spacing between the dots */
     background-color: #1FFFFF; /* Color for dots */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
-    display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
+    display: inline-block; /* Allows the dots to sit next to each other rather than on a new line */
     transition: background-color 0.6 ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below)*/
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
 }
@@ -392,7 +392,7 @@ footer {
     right: .5vw; /* Slightly in from the right side of the viewport */
 }
 
-/* Form stylng */
+/* Form styling */
 .form-container {
     max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
