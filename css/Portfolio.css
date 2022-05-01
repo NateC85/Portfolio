@@ -29,13 +29,13 @@ h1 {
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a;
-
+}
 /* Heading 1 element hover effect */
 
 
 /* Styling for portfolio title text */
 .white-text {
-    color: #fff;/* This is used to change the color of the Portfolio Title text */
+    color: #DA1212;/* This is used to change the color of the Portfolio Title text */
     padding-top: 10vh; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
 }
 
@@ -114,6 +114,7 @@ img:hover {
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: #090088;
+    height: auto;
 }
 /***** END OF GENERAL STYLING *****/
 
