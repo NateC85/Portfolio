@@ -111,10 +111,12 @@ img:hover {
 }
 
 /* Styling for footer element */
-footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+footer, .space {
+    padding: 1%; /* This gives the footer padding that is equal to 1% of the width of the element's area */
     background-color: #090088;
     height: auto;
+    font-size: 3rem;
+    margin: 1px 0;
 }
 /***** END OF GENERAL STYLING *****/
 
